@@ -1,0 +1,25 @@
+[package]
+name = "dax-macro-impl"
+version = "0.1.0"
+authors = ["Garry Mounac <g.mounac@outlook.com>"]
+edition = "2021"
+description = "Procedural macro implementation for DAX (Data Analysis Expressions)"
+license = "MIT"
+repository = "https://github.com/attica-oss/dax-rust"
+
+# [lib]
+# proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.92"
+quote = "1.0.37"
+syn = { version = "2.0.90", features = ["full"] }
+
+# Optional dependencies that might be needed depending on your macro implementation
+serde = { version = "1.0.216", features = ["derive"], optional = true }
+rust_decimal = { version = "1.36.0", features = ["serde"], optional = true }
+
+[features]
+default = []
+decimal = ["rust_decimal"]
+serde-support = ["serde"]

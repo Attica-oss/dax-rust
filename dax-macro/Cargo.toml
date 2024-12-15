@@ -1,0 +1,18 @@
+[package]
+name = "dax-macro"
+version = "0.1.0"
+edition = "2021"
+authors = ["Garry Mounac <g.mounac@outlook.com>"]
+description = "Procedural macro for DAX (Data Analysis Expressions)"
+license = "MIT"
+repository = "https://github.com/attica-oss/dax-rust"
+
+
+[lib]
+proc-macro = true
+
+[dependencies]
+dax-macro-impl = { path = "../dax-macro-impl" }
+proc-macro2 = "1.0.92"
+quote = "1.0.37"
+syn = { version = "2.0.90", features = ["full"] }
