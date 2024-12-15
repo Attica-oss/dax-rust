@@ -1,6 +1,6 @@
 # rust-dax
 
-A Rust library for parsing and evaluating DAX (Data Analysis Expressions) formulas using procedural macros. This library provides compile-time parsing of DAX expressions and basic evaluation capabilities.
+A Rust library for parsing and evaluating [DAX (Data Analysis Expressions)](https://learn.microsoft.com/en-us/dax/dax-overview)formulas using procedural macros. This library provides compile-time parsing of DAX expressions and basic evaluation capabilities.
 
 ## Features
 
